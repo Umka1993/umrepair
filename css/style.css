@@ -360,6 +360,8 @@ template {
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
+  .hero__content {
+    width: 120%; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -368,11 +370,15 @@ template {
     height: 100%; }
 
 .instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #131313; }
   .instagram__link {
-    text-decoration: uppercase;
+    text-transform: uppercase;
+    text-decoration: none;
     color: #E3B873;
-    text-decoration: none; }
+    transform: rotate(90deg); }
 
 .title {
   margin: 0; }
