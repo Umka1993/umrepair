@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Futura Book';
-  src: url("..ontsuturauturaBookC.woff") format("woff"), url("..ontsuturauturaBookC.woff2") format("woff");
+  src: url("../fonts/futura/futuraBookC.woff") format("woff"), url("../fonts/futura/futuraBookC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
 
 @font-face {
   font-family: 'Futura Demi';
-  src: url("..ontsuturauturaDemiC.woff") format("woff"), url("..ontsuturauturaDemiC.woff2") format("woff");
+  src: url("../fonts/futura/futuraDemiC.woff") format("woff"), url("../fonts/futura/futuraDemiC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
