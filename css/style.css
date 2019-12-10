@@ -366,8 +366,6 @@ template {
   height: 100vh;
   padding-top: 100px;
   color: #fff; }
-  .hero__content {
-    width: 120%; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -388,6 +386,9 @@ template {
 
 .title {
   margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
 
 body {
   font-family: 'Futura Book', sans-serif;
