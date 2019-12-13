@@ -338,7 +338,7 @@ template {
     color: #fff; }
 
 .container {
-  width: 85%;
+  width: 90%;
   max-width: 1256px;
   margin: auto; }
 
@@ -419,7 +419,8 @@ body {
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
     position: relative;
-    max-width: 670px; }
+    max-width: 670px;
+    margin-left: 60px; }
   .hero__text {
     font-size: 22px;
     max-width: 500px; }
