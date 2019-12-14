@@ -394,7 +394,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 2.85rem;
-  tranition: color 0.2s; }
+  transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
 
@@ -446,8 +446,8 @@ body {
     color: #fff;
     left: 0;
     bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.6rem;
+    min-height: 6.92rem;
     background-color: #131313;
     transition: 0.4s ease-out; }
     .hero__scroll-dawn::after {
@@ -517,11 +517,18 @@ body {
     display: none; }
   .title {
     font-size: 1.64rem; }
+  .hero__scroll-dawn {
+    display: none; }
   .hero__content {
     max-width: 22.86rem; }
   .hero__text {
-    font-size: 1.29rem; }
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
-    max-width: 22.86rem;
+    min-width: 22.86rem;
     margin-bottom: 1.85rem; } }
+
+@media screen and (max-height: 550px) {
+  .hero__scroll-dawn {
+    display: none; } }
