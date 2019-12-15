@@ -353,23 +353,28 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-size: 1rem; }
 
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive; }
-  .section-title__image {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .section-title__image::before, .section-title__image::after {
-      content: '';
+img {
+  max-width: 100%; }
+
+.section {
+  padding: 60px; }
+  .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive; }
+    .section-title__image {
       display: flex;
-      justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 2px;
-      background-color: #E3B873;
-      margin: 0 10px; }
+      justify-content: center; }
+      .section-title__image::before, .section-title__image::after {
+        content: '';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 2px;
+        background-color: #E3B873;
+        margin: 0 10px; }
 
 .header {
   position: fixed;
@@ -502,6 +507,47 @@ body {
   line-height: 3.69rem; }
   .title--primary {
     color: #E3B873; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -8rem;
+  padding: 1.79rem 2.14rem;
+  max-width: 23.6rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba 0, 0, 0, 0.03;
+  border: 2px solid black; }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem; }
+
+.card__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  font-style: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595;
+  margin-bottom: 2.5rem; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-style: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.214rem 1.285rem; }
 
 @media screen and (max-width: 1200px) {
   html {
