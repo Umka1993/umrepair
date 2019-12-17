@@ -599,7 +599,9 @@ img {
   .card {
     flex-basis: 32%; }
     .card__pricetag {
-      bottom: -2.79rem; } }
+      bottom: -2.79rem; }
+    .card__title {
+      color: #363636; } }
 
 .types__section-title {
   padding: 2rem;
