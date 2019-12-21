@@ -12,6 +12,9 @@
       display: none
     &__content
       margin-left: 0
+  .row_1
+    flex-direction: column
+ 
 @media screen and ( max-width: 570px )
   .contacts
     &__phone
@@ -34,10 +37,64 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+  .row
+    flex-wrap: wrap    
+  .col
+    &-50
+      width: auto 
 @media screen and ( max-height: 550px )
   .hero
     &__scroll-dawn
       display: none
+@media screen and ( min-width: 761px )
+  .design
+    background-color: $light 
+    &__heading
+     font-size: 1.44rem;
+     text-transform: none
+    
+    &__section-title
+     display: inline
+     color: $dark
+
+    &__description
+     display: flex
+     margin: 1.2rem auto 1rem auto
+     width: 55rem !important
+     height: 4.07rem 
+     text-transform: none 
+     color: #363636;
+     font-family: 'Futura Book'
+     margin-top: 1.4rem;
+     font-size: 1.5rem;
+     line-height: 1.9rem;
+
+          
+  .row
+   flex-direction: row
+   justify-content: space-between
+   flex-wrap: wrap
+   
+    
+  .card
+    flex-basis: 32%
+    &__pricetag
+     bottom: -2.79rem
+    &__title
+      color: #363636     
+@media screen and ( max-width: 760px)
+  .row
+    &-project
+     flex-direction: column
+     
+
+  .swiper
+    &-wrapper
+      max-width: 24.28rem
+      
+ 
+  
+
 
       
 

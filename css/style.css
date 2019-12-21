@@ -688,36 +688,6 @@ img {
   display: flex;
   flex-direction: column; }
 
-@media screen and (min-width: 760px) {
-  .design {
-    background-color: #fff; }
-    .design__heading {
-      font-size: 1.44rem;
-      text-transform: none; }
-    .design__section-title {
-      display: inline;
-      color: #131313; }
-    .design__description {
-      display: flex;
-      margin: 1.2rem auto 1rem auto;
-      width: 55rem !important;
-      height: 4.07rem;
-      text-transform: none;
-      color: #363636;
-      font-family: 'Futura Book';
-      margin-top: 1.4rem;
-      font-size: 1.5rem;
-      line-height: 1.9rem; }
-  .row {
-    flex-direction: row;
-    justify-content: space-between; }
-  .card {
-    flex-basis: 32%; }
-    .card__pricetag {
-      bottom: -2.79rem; }
-    .card__title {
-      color: #363636; } }
-
 .types__section-title {
   padding: 2rem;
   font-size: 1.4rem; }
@@ -837,7 +807,9 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .row_1 {
+    flex-direction: column; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -858,11 +830,52 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .row {
+    flex-wrap: wrap; }
+  .col-50 {
+    width: auto; } }
 
 @media screen and (max-height: 550px) {
   .hero__scroll-dawn {
     display: none; } }
+
+@media screen and (min-width: 761px) {
+  .design {
+    background-color: #fff; }
+    .design__heading {
+      font-size: 1.44rem;
+      text-transform: none; }
+    .design__section-title {
+      display: inline;
+      color: #131313; }
+    .design__description {
+      display: flex;
+      margin: 1.2rem auto 1rem auto;
+      width: 55rem !important;
+      height: 4.07rem;
+      text-transform: none;
+      color: #363636;
+      font-family: 'Futura Book';
+      margin-top: 1.4rem;
+      font-size: 1.5rem;
+      line-height: 1.9rem; }
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .card {
+    flex-basis: 32%; }
+    .card__pricetag {
+      bottom: -2.79rem; }
+    .card__title {
+      color: #363636; } }
+
+@media screen and (max-width: 760px) {
+  .row-project {
+    flex-direction: column; }
+  .swiper-wrapper {
+    max-width: 24.28rem; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -876,7 +889,9 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .row_1 {
+    flex-direction: column; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -897,8 +912,49 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .row {
+    flex-wrap: wrap; }
+  .col-50 {
+    width: auto; } }
 
 @media screen and (max-height: 550px) {
   .hero__scroll-dawn {
     display: none; } }
+
+@media screen and (min-width: 761px) {
+  .design {
+    background-color: #fff; }
+    .design__heading {
+      font-size: 1.44rem;
+      text-transform: none; }
+    .design__section-title {
+      display: inline;
+      color: #131313; }
+    .design__description {
+      display: flex;
+      margin: 1.2rem auto 1rem auto;
+      width: 55rem !important;
+      height: 4.07rem;
+      text-transform: none;
+      color: #363636;
+      font-family: 'Futura Book';
+      margin-top: 1.4rem;
+      font-size: 1.5rem;
+      line-height: 1.9rem; }
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .card {
+    flex-basis: 32%; }
+    .card__pricetag {
+      bottom: -2.79rem; }
+    .card__title {
+      color: #363636; } }
+
+@media screen and (max-width: 760px) {
+  .row-project {
+    flex-direction: column; }
+  .swiper-wrapper {
+    max-width: 24.28rem; } }
