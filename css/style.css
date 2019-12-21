@@ -635,7 +635,7 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
-  bottom: -2px; }
+  bottom: 0.55px; }
 
 .design {
   background-color: #131313;
@@ -887,8 +887,12 @@ img {
 @media screen and (max-width: 570px) {
   .row {
     flex-wrap: wrap; }
-  .swiper-slide img {
+  .swiper {
     max-width: 24.28rem; }
+    .swiper-slide img {
+      margin-top: 13.86rem; }
+    .swiper-wrapper {
+      max-width: 24.28rem; }
   .col-mobile {
     order: -1; } }
 
@@ -980,7 +984,11 @@ img {
 @media screen and (max-width: 570px) {
   .row {
     flex-wrap: wrap; }
-  .swiper-slide img {
+  .swiper {
     max-width: 24.28rem; }
+    .swiper-slide img {
+      margin-top: 13.86rem; }
+    .swiper-wrapper {
+      max-width: 24.28rem; }
   .col-mobile {
     order: -1; } }
