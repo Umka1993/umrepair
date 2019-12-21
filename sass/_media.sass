@@ -42,6 +42,7 @@
   .col
     &-50
       width: auto 
+      
 @media screen and ( max-height: 550px )
   .hero
     &__scroll-dawn
@@ -84,13 +85,32 @@
       color: #363636     
 @media screen and ( max-width: 760px)
   .row
-    &-project
-     flex-direction: column
-     
-
+    flex-wrap: wrap
+    
   .swiper
-    &-wrapper
-      max-width: 24.28rem
+    &-slide
+      img
+        max-width: 24.28rem
+        margin-top: 13.86rem
+
+  .col-mobile
+    order: -1   
+@media screen and ( max-width: 570px)
+
+  .row
+    flex-wrap: wrap
+  .swiper
+    &-slide
+      img
+        max-width: 24.28rem
+      
+        
+  .col-mobile
+    order: -1  
+    
+      
+      
+      
       
  
   
