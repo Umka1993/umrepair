@@ -36,7 +36,7 @@ $(document).ready(function () {
   new WOW().init();
 
   // валидация формы
-  $('.form').validate({
+  $('.modal__form').validate({
     errorClass: "invalid",
     rules: {
       // строчное правило 
@@ -69,6 +69,81 @@ $(document).ready(function () {
     }
    
   });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило 
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      //правило-объект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },   
+    // сообщения  
+    errorElement: "div",
+    messages: {
+      userName: {
+        required: 'Заполните поле',
+        minlength: 'Имя не короче  двух букв',
+        maxlength: 'Имя не длинее 15 букв',
+        
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+   
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило 
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      //правило-объект
+      userQuestion: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: {
+        required: true,
+        minlength: 2,
+      },
+
+    },   
+    // сообщения  
+    errorElement: "div",
+    messages: {
+      userName: {
+        required: 'Заполните поле',
+        minlength: 'Имя не короче  двух букв',
+       
+        
+      },
+      userPhone: "Заполните поле",
+      
+      userQuestion: {
+        required: 'Заполните поле',
+        minlength: 'Вопрос не может быть короче  двух букв'
+      }
+    }
+   
+  });
+  
   
   
   // маска  для телефона 
