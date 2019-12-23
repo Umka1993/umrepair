@@ -375,7 +375,7 @@ template {
 div.invalid {
   color: tomato;
   position: absolute;
-  padding-top: 3.7rem; }
+  margin-top: 3.3rem; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
