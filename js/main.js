@@ -77,7 +77,7 @@ $(document).ready(function () {
       userName: {
         required: true,
         minlength: 2,
-        maxlength: 15
+        maxlength: 15,
       },
       userPhone: "required",
       //правило-объект
@@ -121,7 +121,7 @@ $(document).ready(function () {
       },
       userPhone: {
         required: true,
-        minlength: 2,
+        minlength: 2
       },
 
     },   
@@ -131,6 +131,7 @@ $(document).ready(function () {
       userName: {
         required: 'Заполните поле',
         minlength: 'Имя не короче  двух букв',
+        maxlength: 'Имя не длинее 15 букв',
        
         
       },
@@ -138,7 +139,8 @@ $(document).ready(function () {
       
       userQuestion: {
         required: 'Заполните поле',
-        minlength: 'Вопрос не может быть короче  двух букв'
+        minlength: 'Вопрос не может быть короче  двух букв',
+        
       }
     }
    

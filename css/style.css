@@ -373,7 +373,9 @@ template {
     justify-content: center; }
 
 div.invalid {
-  color: tomato; }
+  color: tomato;
+  position: absolute;
+  padding-top: 3.7rem; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
