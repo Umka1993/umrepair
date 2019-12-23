@@ -154,7 +154,7 @@ $(document).ready(function () {
   // создание yandex карты 
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [55.751574, 37.573856],
+            center: [47.244734, 39.723227],
             zoom: 9
         }, {
             searchControlProvider: 'yandex#search'
@@ -181,18 +181,18 @@ ymaps.ready(function () {
             iconImageOffset: [-5, -38]
         }),
 
-        myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-            hintContent: 'Собственный значок метки с контентом',
-            balloonContent: 'А эта — новогодняя',
-            iconContent: '12'
+        myPlacemarkWithContent = new ymaps.Placemark([47.244734, 39.723227], {
+            hintContent: 'Наш офис',
+            balloonContent: 'Вход со двора',
+            iconContent: ''
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
             iconLayout: 'default#imageWithContent',
             // Своё изображение иконки метки.
-            iconImageHref: 'images/ball.png',
+            iconImageHref: 'img/location.png',
             // Размеры метки.
-            iconImageSize: [48, 48],
+            iconImageSize: [32, 32],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
             iconImageOffset: [-24, -24],
