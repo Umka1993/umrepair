@@ -373,9 +373,9 @@ template {
     justify-content: center; }
 
 div.invalid {
-  color: tomato;
   position: absolute;
-  margin-top: 3.3rem; }
+  color: tomato;
+  top: 3.7rem; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
@@ -703,6 +703,7 @@ img {
   color: #131313; }
 
 .control__input-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-basis: 30%; }
@@ -818,7 +819,8 @@ img {
       display: flex;
       flex-direction: column;
       flex-basis: 45%;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      position: relative; }
       .footer__input-group--full-width {
         flex-basis: 100%;
         margin-top: 1.4rem;
@@ -837,6 +839,9 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin-bottom: 4rem;
+    min-height: 465px; }
 
 .types__section-title {
   padding: 2rem;
@@ -936,11 +941,14 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3.428rem; }
-  .modal__input:last-of-type {
+  .modal__input {
+    position: relative; }
+    .modal__input-group {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3.428rem; }
+  .modal:last-of-type {
     margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
