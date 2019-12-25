@@ -39,7 +39,7 @@ try {
     $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его почта будет: ${userEmail}. Его вопрос будет: ${userQuestion}";
     
     $mail->send();
-    header('Location: thanks.html');
+    // header('Location: thanks.html');
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
