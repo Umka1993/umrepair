@@ -30,8 +30,8 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination')
 
-  next.css( 'left', prev.width() + 10 + bullets.width() + 10 );
-  bullets.css( 'left', prev.width() + 10 );
+  next.css( 'left', prev.width() + 10 + bullets.width() + 10 )
+  bullets.css( 'left', prev.width() + 10 )
 
   new WOW().init();
 
@@ -66,20 +66,6 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
-    },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          alert(' Форма отправлена, мы свяжемся с вами через 10 минут');
-          $(form)[0].reset();
-          modal.removeClass('modal--visible');
-
-        }
-      }); 
-      return false;
     }
    
   });
@@ -97,7 +83,7 @@ $(document).ready(function () {
       //правило-объект
       userEmail: {
         required: true,
-        email: true,
+        email: true
       }
     },   
     // сообщения  
@@ -114,20 +100,6 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
-    },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          alert(' Форма отправлена, мы свяжемся с вами через 10 минут');
-          $(form)[0].reset();
-          modal.removeClass('modal--visible');
-
-        }
-      }); 
-      return false;
     }
    
   });
@@ -139,17 +111,17 @@ $(document).ready(function () {
       userName: {
         required: true,
         minlength: 2,
-        maxlength: 15,
+        maxlength: 15
       },
       userPhone: "required",
       //правило-объект
       userQuestion: {
         required: true,
-        minlength: 2,
+        minlength: 2
       },
       userPhone: {
         required: true,
-        minlength: 2,
+        minlength: 2
       },
 
     },   
@@ -183,7 +155,6 @@ $(document).ready(function () {
 
         }
       }); 
-      return false;
     }
   });
   
@@ -192,6 +163,9 @@ $(document).ready(function () {
   // маска  для телефона 
   $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});     
 
+
+  
+  
   // создание yandex карты 
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
