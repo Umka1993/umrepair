@@ -163,8 +163,6 @@ $(document).ready(function () {
   // маска  для телефона 
   $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});     
 
-
-  
   
   // создание yandex карты 
 ymaps.ready(function () {
