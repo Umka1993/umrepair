@@ -161,13 +161,12 @@ $(document).ready(function () {
   
   
   // маска  для телефона 
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});     
+  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});
 
-  
-  // создание yandex карты 
-ymaps.ready(function () {
+  //создание карты
+  ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [47.244734, 39.723227],
+            center: [55.751574, 37.573856],
             zoom: 9
         }, {
             searchControlProvider: 'yandex#search'
@@ -192,31 +191,12 @@ ymaps.ready(function () {
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
             iconImageOffset: [-5, -38]
-        }),
-
-        myPlacemarkWithContent = new ymaps.Placemark([47.244734, 39.723227], {
-            hintContent: 'Наш офис',
-            balloonContent: 'Вход со двора',
-            iconContent: ''
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/location.png',
-            // Размеры метки.
-            iconImageSize: [32, 32],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-24, -24],
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
-            // Макет содержимого.
-            iconContentLayout: MyIconContentLayout
         });
+
+       
 
     myMap.geoObjects
         .add(myPlacemark)
         .add(myPlacemarkWithContent);
-      });
+});
 });
