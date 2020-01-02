@@ -163,8 +163,15 @@ $(document).ready(function () {
   // маска  для телефона 
   $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});
 
+  setTimeout(function(){
+    var elem = document.createElement('script');
+    elem.type = 'text/javascript';
+    elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU&onload=getYaMap';
+    document.getElementsByTagName('body')[0].appendChild(elem);
+  }, 2000);
+
   //создание карты
-  ymaps.ready(function () {
+  function init() {
     var myMap = new ymaps.Map('map', {
             center: [55.751574, 37.573856],
             zoom: 9
@@ -197,6 +204,6 @@ $(document).ready(function () {
 
     myMap.geoObjects
         .add(myPlacemark)
-        .add(myPlacemarkWithContent);
-});
+        
+  };
 });
