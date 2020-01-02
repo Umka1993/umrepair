@@ -190,7 +190,31 @@ $(document).ready(function () {
   
   
   // маска  для телефона 
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});     
+  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});   
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '465',
+      width: '100%',
+      videoId: 'bX9j8Z9b9Q4',
+      events: {
+        'onReady': videoPlay,
+        
+      }
+    });
+  })
+  function videoPlay(event) {
+    event.target.playVideo();
+     
+ }
+
+  setTimeout(function(){
+    var elem = document.createElement('script');
+    elem.type = 'text/javascript';
+    elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU&onload=getYaMap';
+    document.getElementsByTagName('body')[0].appendChild(elem);
+  }, 2000);
+  
 
   // создание yandex карты 
 ymaps.ready(function () {
