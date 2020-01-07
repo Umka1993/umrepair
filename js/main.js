@@ -208,5 +208,3 @@ $(document).ready(function () {
     event.target.playVideo();
   }
 });
-
-
