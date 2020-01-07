@@ -190,85 +190,23 @@ $(document).ready(function () {
   
   
   // маска  для телефона 
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});   
+  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});     
+
   var player;
-  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+  $('.video__play').on('click',function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '465',
+      height: '460',
       width: '100%',
       videoId: 'bX9j8Z9b9Q4',
       events: {
-        'onReady': videoPlay,
-        
+        'onReady':videoPlay ,
       }
     });
   })
+  
   function videoPlay(event) {
     event.target.playVideo();
-     
- }
-
-  setTimeout(function(){
-    var elem = document.createElement('script');
-    elem.type = 'text/javascript';
-    elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU&onload=getYaMap';
-    document.getElementsByTagName('body')[0].appendChild(elem);
-  }, 2000);
-  
-
-  // создание yandex карты 
-ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [47.244734, 39.723227],
-            zoom: 9
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'images/myIcon.gif',
-            // Размеры метки.
-            iconImageSize: [30, 42],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
-        }),
-
-        myPlacemarkWithContent = new ymaps.Placemark([47.244734, 39.723227], {
-            hintContent: 'Наш офис',
-            balloonContent: 'Вход со двора',
-            iconContent: ''
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/location.png',
-            // Размеры метки.
-            iconImageSize: [32, 32],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-24, -24],
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
-            // Макет содержимого.
-            iconContentLayout: MyIconContentLayout
-        });
-
-    myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemarkWithContent);
-      });
+  }
 });
+
+

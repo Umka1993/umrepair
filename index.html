@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <script async src="https://api-maps.yandex.ru/2.1/?apikey=fc40dcfd-2ae1-4629-b046-e0e9f9e155a5&lang=ru_RU">
-  </script>
   <title>Document</title>
 </head>
+
 <body>
+  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(56896396, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/56896396" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   <header class="header">
     <div class="container">
       <div class="menu  ">
@@ -27,7 +27,7 @@
         </nav>
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone ">+7 (999) 768-32-99</a>
-          <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+          <button  onclick="ym('56896396', 'reachGoal', 'button'); return true;" class="button  contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
         </div>
       </div>
       <!-- /.menu -->
@@ -189,7 +189,7 @@
         </div>
         <!-- /.section-title -->
         <div class="control__video video" id="player">
-            <script src="https://www.youtube.com/iframe_api"></script>
+             <script src="https://www.youtube.com/iframe_api"></script>
             <img src="img/play-icon.svg" alt="play icon" class="video__play">
           </div>
           <!-- /.control__video -->
@@ -498,7 +498,8 @@
       <!-- /.footer-wrap -->
      
 
-        <div class="map footer__map" id="map">
+      <div class="map footer__map" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.5553124358057!2d39.72099081525752!3d47.24484357916234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2s!4v1578312002758!5m2!1sru!2s" width="1200" height="450" style="border:0;" allowfullscreen=""></iframe>
         
       </div>
     </div>
@@ -555,13 +556,15 @@
           <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
-        <button class="button button--primary modal__button">Отправить заявку</button>
+        <button  onclick="ym('56896396', 'reachGoal', 'button-call'); return true;" class="button button--primary modal__button" data-toggle="modal"> Отправить заявку</button>
         
       </form>
       <!-- /.form modal__form -->
     </div>
+   
     <!-- /.modal_dialog -->
   </div>
+
   <!-- /.modal -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.js"></script>
@@ -571,3 +574,5 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+
