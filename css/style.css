@@ -647,8 +647,7 @@ img {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 2.898rem;
-  line-height: 3.69rem; }
+  font-size: 2.898rem; }
   .title--primary {
     color: #E3B873; }
 
@@ -1086,6 +1085,19 @@ iframe {
     flex-direction: column; } }
 
 @media screen and (max-width: 570px) {
+  .section-title {
+    display: block; }
+    .section-title__text {
+      display: block;
+      max-width: 21.78rem;
+      text-align: center;
+      margin: auto; }
+    .section-title__word {
+      display: block; }
+      .section-title__word ::after {
+        display: none; }
+    .section-title--left {
+      text-align: center; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -1094,6 +1106,8 @@ iframe {
     display: none; }
   .title {
     font-size: 1.64rem; }
+  .hero__title {
+    line-heght: 2rem; }
   .hero__scroll-dawn {
     display: none; }
   .hero__content {
@@ -1170,7 +1184,12 @@ iframe {
     .footer__wrap {
       max-width: 24.28rem; }
     .footer__button {
-      padding: 1rem 8.57rem; }
+      display: -webkit-box;
+      display: flex;
+      padding: 1rem 7.4rem;
+      margin: 0;
+      -webkit-box-pack: center;
+      justify-content: center; }
     .footer__group {
       display: -webkit-box;
       display: flex;
@@ -1257,6 +1276,19 @@ iframe {
     flex-direction: column; } }
 
 @media screen and (max-width: 570px) {
+  .section-title {
+    display: block; }
+    .section-title__text {
+      display: block;
+      max-width: 21.78rem;
+      text-align: center;
+      margin: auto; }
+    .section-title__word {
+      display: block; }
+      .section-title__word ::after {
+        display: none; }
+    .section-title--left {
+      text-align: center; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -1265,6 +1297,8 @@ iframe {
     display: none; }
   .title {
     font-size: 1.64rem; }
+  .hero__title {
+    line-heght: 2rem; }
   .hero__scroll-dawn {
     display: none; }
   .hero__content {
@@ -1341,7 +1375,12 @@ iframe {
     .footer__wrap {
       max-width: 24.28rem; }
     .footer__button {
-      padding: 1rem 8.57rem; }
+      display: -webkit-box;
+      display: flex;
+      padding: 1rem 7.4rem;
+      margin: 0;
+      -webkit-box-pack: center;
+      justify-content: center; }
     .footer__group {
       display: -webkit-box;
       display: flex;

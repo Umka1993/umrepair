@@ -9,14 +9,34 @@
   .nav
     display: none
   .hero
+    
     &__instagram
       display: none
     &__content
       margin-left: 0
+      
   .row_1
     flex-direction: column
  
 @media screen and ( max-width: 570px )
+  .section
+    &-title  
+      display: block
+      &__text
+        display: block
+        // display: inline
+        max-width: 21.78rem
+        text-align: center
+        margin: auto
+
+      &__word
+        display: block
+        ::after
+          display: none
+      &--left
+        text-align: center    
+      
+      
   .contacts
     &__phone
       margin-right: 0
@@ -27,6 +47,8 @@
   .title
     font-size: 1.64rem
   .hero
+    &__title
+      line-heght: 2rem
     &__scroll-dawn
       display: none
     &__content
@@ -102,7 +124,11 @@
     &__wrap
       max-width: 24.28rem
     &__button
-      padding: 1rem 8.57rem
+      display: flex
+      padding: 1rem 7.4rem
+      margin: 0
+      justify-content: center
+      
     &__group
       display: flex
       flex-direction: column
@@ -110,11 +136,9 @@
       display: flex
       &--heading
         max-width: 24.28rem
-      
       &--map
         order: -1
         text-align: center
-        
     &__menu
       display: none
         
