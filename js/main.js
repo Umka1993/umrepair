@@ -190,7 +190,7 @@ $(document).ready(function () {
   
   
   // маска  для телефона 
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(__)__-__-___"});     
+  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "Ваш номер телефона:"});     
 
   var player;
   $('.video__play').on('click',function onYouTubeIframeAPIReady() {
