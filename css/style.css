@@ -867,7 +867,8 @@ img {
     padding: 2.5rem;
     margin-top: -20rem;
     background: #131313 url("../img/bg-lines.svg") no-repeat;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.714rem;
+    background-size: cover; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -1040,7 +1041,8 @@ iframe {
     max-width: 36.35rem;
     background: #131313 url("../img/bg-lines.svg") no-repeat;
     padding: 2.357rem 3.5rem 1.928rem;
-    color: #fff; }
+    color: #fff;
+    background-size: cover; }
   .modal__close {
     position: absolute;
     right: 0;
@@ -1180,6 +1182,8 @@ iframe {
     .control__button {
       margin: auto;
       margin-bottom: -6.5rem; }
+    .control__video {
+      min-height: 17.25rem; }
   .policy__label {
     color: #fff;
     margin-left: -0.1rem;
@@ -1417,6 +1421,8 @@ iframe {
     .control__button {
       margin: auto;
       margin-bottom: -6.5rem; }
+    .control__video {
+      min-height: 17.25rem; }
   .policy__label {
     color: #fff;
     margin-left: -0.1rem;
